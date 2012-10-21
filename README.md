@@ -1,9 +1,8 @@
 ## Description
-A hubot script for retrieving info about food trucks currently in DC, MD and VA
+A hubot script for retrieving info about food trucks currently in DC, MD and VA.
 
 ## Installation
-Drop this in your generated hubot `src/scripts` directory
-Use npm to install `zombie` and `moment`
+Drop this in your generated hubot `src/scripts` directory and use npm to install `zombie` and `moment`.
 
 ## Examples
 
