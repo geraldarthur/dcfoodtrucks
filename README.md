@@ -16,9 +16,9 @@ All trucks in Maryland
 
     hubot dcft me md
 
-All trucks parked near Farragut North in Washington, D.C.
+All trucks parked near Farragut Square in Washington, D.C.
 
-    hubot dcft me farragut north
+    hubot dcft me farragut square
 
 All trucks serving up tacos
 
