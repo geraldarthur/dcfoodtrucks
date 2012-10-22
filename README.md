@@ -12,9 +12,9 @@ All trucks across DC, MD and VA
     
     hubot dcft me
 
-All trucks in Maryland
+All trucks in Washington, D.C. (`md` and `va` also work)
 
-    hubot dcft me md
+    hubot dcft me dc
 
 All trucks parked near Farragut Square in Washington, D.C.
 
