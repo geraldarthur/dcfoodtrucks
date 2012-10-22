@@ -8,18 +8,18 @@ Drop this in your generated hubot `src/scripts` directory and use npm to install
 
 You can use either `dcfoodtruck me` or the shortened `dcft me`
 
-All trucks across DC, MD and VA
+All trucks across the Washington, D.C. metropolitan area
     
     hubot dcft me
 
-All trucks in Washington, D.C. (`md` and `va` also work)
+Limit to just those trucks in Washington, D.C. (`md` and `va` also work)
 
     hubot dcft me dc
 
-All trucks parked near Farragut Square in Washington, D.C.
+Find trucks parked near Farragut Square in Washington, D.C.
 
     hubot dcft me farragut square
 
-All trucks serving up tacos
+Find trucks serving up tacos
 
     hubot dcft me tacos
