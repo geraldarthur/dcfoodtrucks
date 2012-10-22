@@ -2,7 +2,7 @@
 #   DC Food Trucks
 #
 # Commands:
-#   hubot dcfoodtruck me <query> - Searches Foodtruck Fiesta for trucks matching query, can use 'dcft' for short
+#   hubot dcfoodtruck me <query> - Searches for trucks matching query, can be blank, state abbrev (dc, md, va), location (farragut square) or food item. Can use 'dcft' for short.
 #
 # Dependencies:
 #   "zombie": "2.x"
