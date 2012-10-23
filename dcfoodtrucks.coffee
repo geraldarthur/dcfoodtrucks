@@ -2,11 +2,7 @@
 #   DC Food Trucks
 #
 # Commands:
-#   hubot (dcfoodtruck|dcft) me <query> - Searches Foodtruck Fiesta
-#   hubot dcft me - All trucks across DC, MD and VA
-#   hubot dcft me md - All trucks in Maryland
-#   hubot dcft me farragut north - All trucks parked near Farragut North in Washington, D.C.
-#   hubot dcft me tacos - All trucks serving up tacos
+#   hubot dcfoodtruck me <query> - Searches for trucks matching query, can be blank, state abbrev (dc, md, va), location (farragut square) or food item. Can use 'dcft' for short.
 #
 # Dependencies:
 #   "zombie": "2.x"
