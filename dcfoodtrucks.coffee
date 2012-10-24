@@ -28,7 +28,10 @@ module.exports = (robot) ->
     console.log '*STEP1'
     query = msg.match[3]
     console.log '*STEP2'
-    content msg, (err, res, body) ->
+    console.log msg.http.toString()
+    msg.http("http://foodtruckfiesta.com/dc-food-truck-list/")
+      .get() (err, res, body) ->
+        console.log '*step2.5'
         states = {}
         locations = {}
         vendors = []
@@ -71,9 +74,9 @@ module.exports = (robot) ->
             for index, vendor of ary
               result += "#{ vendor }\n"
             return result
-
+          console.log '*** step3'
           return msg.send format(vendors) if !query || query.length == 0
-
+          console.log '*** step4'
           if query.match(/^(va|dc|md)$/i)
             return msg.send format states[query.toUpperCase()] if states[query.toUpperCase()]
             return msg.send "No trucks found in #{ query }"
