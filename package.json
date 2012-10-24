@@ -22,6 +22,9 @@
   },
   "version": "0.0.1",
   "keywords": ["hubot", "campfire", "food trucks", "washington dc", "dc", "maryland", "viriginia"],
+  "scripts": {
+    "test": "./node_modules/hubot/node_modules/coffee-script/bin/coffee test"
+  },
   "dependencies": {
     "zombie": "2.x",
     "moment": "1.7.x"

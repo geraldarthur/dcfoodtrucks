@@ -14,12 +14,21 @@
 
 Browser = require('zombie')
 moment = require('moment')
+fs = require('fs')
+
+content = (msg, cb) ->
+  if process.env.NODE_ENV && process.env.NODE_ENV == 'testing'
+    return cb(null, {}, fs.readFileSync(__dirname + '/test/index.html'))
+  msg.http("http://foodtruckfiesta.com/dc-food-truck-list/").get() (err, res, body) ->
+    return cb(err, res, body)
 
 module.exports = (robot) ->
+  console.log '*STEPPPPP'
   robot.respond /(dcfoodtruck|dcft)( me)? (.*)/i, (msg) ->
+    console.log '*STEP1'
     query = msg.match[3]
-    msg.http("http://foodtruckfiesta.com/dc-food-truck-list/")
-      .get() (err, res, body) ->
+    console.log '*STEP2'
+    content msg, (err, res, body) ->
         states = {}
         locations = {}
         vendors = []
